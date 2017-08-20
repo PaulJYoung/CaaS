@@ -1,0 +1,15 @@
+{% extends "CloudasaService/base.html" %}
+{% load staticfiles %}
+{% block content %}
+	
+<div class="headcolumns">
+    <div class="innerwrap">
+        <p class="mainheading">The Cloud is Virtualisation</p>
+        <p class="maintext">{{ Intro.title_content|linebreaksbr }}</p>
+        <p class="mainheading">Storage Virtualisation</p>
+        <p class="maintext">{{ Storage.title_content|linebreaksbr }}</p>
+        <p class="mainheading">Support</p>
+        <p class="maintext">{{ Support.title_content|linebreaksbr }}</p>
+    </div>
+</div>
+{% endblock %}

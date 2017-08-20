@@ -1,0 +1,55 @@
+{% extends "CloudasaService/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+ <div class="subMenu" >
+  <div class="inner">
+   <a href="#sTop" class="subNavBtn">Top</a>
+   <a href="#intro" class="subNavBtn">History</a>
+   <a href="#s1" class="subNavBtn">Scalability</a>
+   <a href="#s2" class="subNavBtn">Network</a>
+   <a href="#s3" class="subNavBtn">Storage</a>
+  </div>
+ </div>
+
+ <div class="section intro">
+  <div class="inner homeNews">
+   <h1>Some History of Virtualisation</h1>
+   <div class="content">{{ History.title_content|linebreaksbr }}</div>
+  </div>
+ </div>
+
+ <div class="section s1">
+  <div class="inner">
+   <div class="col-2-3">
+    <div class="content">
+     <p class="header">It Scales!</p>
+     <div class="content">{{ Scalability.title_content|linebreaksbr }}</div>
+    </div>
+   </div><br class="clear">
+  </div>
+ </div>
+
+ <div class="section s2">
+  <div class="inner">
+   <div class="col-1-3">&nbsp;</div>
+   <div class="col-2-3">
+    <p class="header">The Network Virtualisation Piece</p>
+    <div class="content">{{ Network.title_content|linebreaksbr }}</div>
+   </div>
+  </div>
+ </div>
+
+ <div class="section s3">
+  <div class="inner">
+   <div class="col-2-3">
+    <p class="header">The Data Grows</p>
+    <div class="content">
+     <div class="content">{{ Storage.title_content|linebreaksbr }}</div>
+    </div>
+   </div>
+  </div>
+  <br class="clear">
+ </div>
+
+{% endblock %}

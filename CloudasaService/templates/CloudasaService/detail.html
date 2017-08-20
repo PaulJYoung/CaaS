@@ -1,0 +1,58 @@
+{% extends "CloudasaService/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+ <div class="subMenu" >
+  <div class="inner">
+   <a href="#sTop" class="subNavBtn">Top</a>
+   <a href="#s4" class="subNavBtn">Public or Private?</a>
+   <a href="#s5" class="subNavBtn">Services</a>
+   <a href="#s6" class="subNavBtn">Self Service</a>
+   <a href="#s8" class="subNavBtn end">Costs</a>
+  </div>
+ </div>
+
+ <div class="section s4">
+  <div class="inner homeNews">
+   <h1>What is right for you? Public or Private?</h1>
+   <div class="content">{{ Publicorprivate.title_content|linebreaksbr }}</div>
+  </div>
+ </div>
+
+ <div class="section s5">
+  <div class="inner">
+   <div class="col-1-3">&nbsp;</div>
+   <div class="col-2-3">
+    <div class="content">
+     <p class="header">The Services...</p>
+     <div class="content">{{ Services.title_content|linebreaksbr }}</div>
+    </div>
+   </div><br class="clear">
+  </div>
+ </div>
+
+ <div class="section s6">
+  <div class="inner">
+   <div class="col-2-3">
+    <div class="content">
+     <p class="header">Self Service</p>
+     <div class="content">{{ Provisioning.title_content|linebreaksbr }}</div>
+    </div>
+   </div><br class="clear">
+  </div>
+ </div>
+
+ <div class="section s8">
+  <div class="inner">
+   <div class="col-2-3">
+    <div class="content">
+     <p class="header">Cost, the crucial part!</p>
+     <div class="content">{{ Costs.title_content|linebreaksbr }}</div>
+    </div>
+   </div><br class="clear">
+   <div class="col-1-2">&nbsp;</div>
+  </div>
+ </div>
+
+	
+{% endblock %}
