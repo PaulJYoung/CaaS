@@ -135,6 +135,25 @@ code {
 	padding-top: 5px;
 }
 
+/* added 021017 */
+.socialm  div {
+        width: 100%;
+	background: #1b83b3;
+        height: 20px;
+        overflow: hidden;
+}
+/* END added 021017 */
+
+.floatleft {
+        float: left;
+        width: 300;
+}
+
+.floatright {
+        float: right;
+        width: 300;
+}
+
 .inner {
 	width: 960px;
 	margin: 0 auto;

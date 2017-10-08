@@ -1,0 +1,39 @@
+version: '2'
+services:
+  nginx:
+    image: nginx:latest
+    container_name: ng01
+    ports: 
+      - "80:80"
+    volumes:
+      - ./src:/src
+      - ./config/nginx:/etc/nginx/conf.d
+      - ./CaaS/static:/static
+    volumes_from:
+      - web
+    links:
+      - web:web
+  db:
+    image: mysql:latest
+    ports: 
+      - "3306:3306"
+    container_name: msq01
+    environment:
+      MYSQL_ROOT_PASSWORD: ay65112025
+      DJANGO_SETTINGS_MODULE: /CaaS/CaaS/settings.py
+    volumes: 
+      - /var/lib/mysql
+  web:
+    build: .
+    container_name: gu01
+#   command: gunicorn /CaaS/caas.wsgi -b 0.0.0.0:8000 
+#   command: python /CaaS/manage.py makemigrations && python /CaaS/manage.py migrate && gunicorn /CaaS/caas.wsgi -b 0.0.0.0:8000 
+#   command: python /CaaS/manage.py runserver 0.0.0.0:8000
+#   command: cd /CaaS && /usr/local/bin/gunicorn CaaS.wsgi:application -w 2 -b :8080
+    command: sh -c "cd /CaaS; /usr/local/bin/gunicorn CaaS.wsgi:application -w 2 -b :8000"
+    depends_on: 
+      - db
+    volumes: 
+      - ./CaaS:/CaaS
+    expose: 
+      - "8000"
