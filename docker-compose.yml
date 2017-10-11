@@ -19,7 +19,7 @@ services:
       - "3306:3306"
     container_name: msq01
     environment:
-      MYSQL_ROOT_PASSWORD: ay65112025
+      MYSQL_ROOT_PASSWORD: 
       DJANGO_SETTINGS_MODULE: /CaaS/CaaS/settings.py
     volumes: 
       - /var/lib/mysql
