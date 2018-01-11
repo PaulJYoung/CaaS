@@ -227,7 +227,7 @@ code {
 }
 
 .topsubMenu {
-	min-height: 39px;
+	min-height: 20px;
 	z-index: 1000;
 	width: 440px;
         border-top-left-radius: 2em;
