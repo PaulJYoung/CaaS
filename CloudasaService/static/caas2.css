@@ -289,7 +289,7 @@ code {
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 12px;
 	padding: 8px 0% 0 0%;
 	text-align: center;
         border-top-left-radius: 1em;
@@ -304,7 +304,7 @@ code {
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 12px;
 	padding: 8px 0% 0 0%;
 	text-align: center;
         border-top-right-radius: 1em;
@@ -319,7 +319,7 @@ code {
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 12px;
 	padding: 8px 0% 0 0%;
 	text-align: center;
 /*	color: #fff; */
