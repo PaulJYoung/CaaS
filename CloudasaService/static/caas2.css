@@ -249,8 +249,8 @@ code {
 	min-height: 39px;
 	z-index: 1000;
 	width: 440px;
-        border-top-left-radius: 2em;
-        border-top-right-radius: 2em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
 /*        background: #1b57a4; */
 /*	background: #184764; */
 /*	background: #0977bc; */
@@ -307,7 +307,7 @@ code {
 	font-size: 16px;
 	padding: 8px 0% 0 0%;
 	text-align: center;
-        border-top-right-radius: 2em;
+        border-top-right-radius: 1em;
 /*	color: #fff; */
         color: #ff7f00;
 }
@@ -350,8 +350,8 @@ code {
 
 .topsubMenu a:hover {
 	background: #1783c7;
-        border-top-left-radius: 2em;
-        border-top-right-radius: 2em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
 }
 
 .active {
