@@ -23,6 +23,7 @@ def index(request):
     Advantage = Material.objects.get(title='advantage')
     Publicdis = Material.objects.get(title='publicdis')
     Privatedis = Material.objects.get(title='privatedis')
+    Publicorprivate = Material.objects.get(title='publicorprivate')
     Author = Material.objects.get(title='author')
     Module = "index"
     context = {
@@ -32,6 +33,7 @@ def index(request):
         'Advantage': Advantage,
         'Publicdis': Publicdis,
         'Privatedis': Privatedis,
+	'Publicorprivate': Publicorprivate,
         'Author': Author,
     }
     return render(request, 'CloudasaService/index.html', context)
