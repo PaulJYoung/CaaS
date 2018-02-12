@@ -50,7 +50,7 @@ def virtualisation(request):
     return render(request, 'CloudasaService/virtualisation.html', context)
 
 def detail(request):
-    Amazon = AWS.objects.order_by('-post_date')[:10]
+    Amazon = AWS.objects.order_by('-title_date')[:10]
     Publicorprivate = Material.objects.get(title='publicorprivate')
     Services = Material.objects.get(title='services')
     Costs = Material.objects.get(title='costs')
