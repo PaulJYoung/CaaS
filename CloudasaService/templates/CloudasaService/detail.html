@@ -40,10 +40,10 @@
    <div class="col-2-3">
     <div class="content">
      <p class="header">Amazon Web Services</p>
-      {% if AWS %}
-       {% for item in AWS %}
-        <div class="content">{{ Amazon.title|linebreaksbr }}</div>
-        <div class="content">{{ Amazon.title_content|linebreaksbr }}</div>
+      {% if Amazon %}
+       {% for item in Amazon %}
+        <div class="content">{{ item.title|linebreaksbr }}</div>
+        <div class="content">{{ item.title_content|linebreaksbr }}</div>
        {% endfor %}
       {% endif $}
 #     <div class="content">{{ Costs.title_content|linebreaksbr }}</div>
