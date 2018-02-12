@@ -7,6 +7,7 @@
    <a href="#sTop" class="subNavBtn">Top</a>
    <a href="#s5" class="subNavBtn">Services</a>
    <a href="#s8" class="subNavBtn end">Costs</a>
+   <a href="#s9" class="SubNavBtn">AWS</a>
   </div>
  </div>
 
@@ -34,5 +35,21 @@
   </div>
  </div>
 
+ <div class="section s9">
+  <div class="inner">
+   <div class="col-2-3">
+    <div class="content">
+     <p class="header">Amazon Web Services</p>
+      {% if AWS %}
+       {% for item in AWS %}
+        <div class="content">{{ AWS.title|linebreaksbr }}</div>
+        <div class="content">{{ AWS.title_content|linebreaksbr }}</div>
+       {% endfor %}
+      {% endif $}
+#     <div class="content">{{ Costs.title_content|linebreaksbr }}</div>
+    </div>
+   </div><br class="clear">
+  <div class="col-1-2">&nbsp;</div>
+ </div>
 	
 {% endblock %}
