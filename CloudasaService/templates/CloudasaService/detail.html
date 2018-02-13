@@ -42,7 +42,8 @@
      <p class="header">Amazon Web Services</p>
       {% if Amazon %}
        {% for item in Amazon %}
-        <div class="content">{{ item.title|linebreaksbr }}</div>
+        <div class="content"><br></div>
+	<div class="contentbold">{{ item.title|linebreaksbr }}</div>
 	<div class="content"><br></div>
         <div class="content">{{ item.title_content|linebreaksbr }}</div>
        {% endfor %}
