@@ -63,6 +63,8 @@ def detail(request):
         'Services': Services,
         'Costs': Costs,
 	'Amazon': Amazon,
+	'Azure': Azure,
+	'Google': Google,
     }
     return render(request, 'CloudasaService/detail.html', context)
 
