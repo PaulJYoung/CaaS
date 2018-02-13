@@ -51,7 +51,7 @@ def virtualisation(request):
 
 def detail(request):
     Amazon = AWS.objects.order_by('title_date')[:11]
-    Azure = Azure.objects.order_by('title_date')[:10]
+    MSA = Azure.objects.order_by('title_date')[:10]
     Google = Google.objects.order_by('title_date')[:10]
     Publicorprivate = Material.objects.get(title='publicorprivate')
     Services = Material.objects.get(title='services')
@@ -63,7 +63,7 @@ def detail(request):
         'Services': Services,
         'Costs': Costs,
 	'Amazon': Amazon,
-	'Azure': Azure,
+	'MSA': MSA,
 	'Google': Google,
     }
     return render(request, 'CloudasaService/detail.html', context)
