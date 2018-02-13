@@ -211,6 +211,11 @@ code {
 	padding:0 20px 0 0;
 }
 
+.contentbold {
+        padding:0 20px 0 0;
+	font-weight: bold;
+}
+
 .homeNews {
 	padding:20px 0 0 0;
 	text-align: left;
