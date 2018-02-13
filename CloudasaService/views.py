@@ -5,7 +5,7 @@ from django.core.urlresolvers import reverse
 from django.views import generic
 from django.views.generic import DetailView
 from django.views.generic import ListView
-from .models import Material, AWS
+from .models import Material, AWS, Azure, Google
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.db.models import F
@@ -51,6 +51,8 @@ def virtualisation(request):
 
 def detail(request):
     Amazon = AWS.objects.order_by('title_date')[:11]
+    Azure = Azure.objects.order_by('title_date')[:10]
+    Google = Google.objects.order_by('title_date')[:10]
     Publicorprivate = Material.objects.get(title='publicorprivate')
     Services = Material.objects.get(title='services')
     Costs = Material.objects.get(title='costs')

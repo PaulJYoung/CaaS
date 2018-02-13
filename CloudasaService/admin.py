@@ -1,9 +1,9 @@
 from django.contrib import admin
 
 # from .models import Material
-from .models import Material, AWS
+from .models import Material, AWS, Azure, Google
 
-@admin.register(Material, AWS)
+@admin.register(Material, AWS, Azure, Google)
 
 class DefaultAdmin(admin.ModelAdmin):
 	pass
