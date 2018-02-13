@@ -54,5 +54,25 @@
   <div class="col-1-2">&nbsp;</div>
  </div>
 </div>
+
+ <div class="section s10">
+  <div class="inner">
+   <div class="col-1-1">
+    <div class="content">
+     <p class="header">Microsoft Azure</p>
+      {% if Azure %}
+       {% for item in Azure %}
+        <div class="content"><br></div>
+	<div class="contentbold">{{ item.title|linebreaksbr }}</div>
+	<div class="content"><br></div>
+        <div class="content">{{ item.title_content|linebreaksbr }}</div>
+       {% endfor %}
+      {% endif %}
+    </div>
+   </div><br class="clear">
+  <div class="col-1-2">&nbsp;</div>
+ </div>
+</div>
+
 	
 {% endblock %}
