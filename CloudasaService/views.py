@@ -47,7 +47,7 @@ def virtualisation(request):
         'Intro': Intro,
         'Support': Support,
         'Storage': Storage,
-	'Author': Author;
+	'Author': Author,
     }
     return render(request, 'CloudasaService/virtualisation.html', context)
 
