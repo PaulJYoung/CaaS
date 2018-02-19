@@ -42,10 +42,12 @@ def virtualisation(request):
     Intro = Material.objects.get(title='history')
     Support = Material.objects.get(title='support')
     Storage = Material.objects.get(title='storage')
+    Author = Material.objects.get(title='author')
     context = {
         'Intro': Intro,
         'Support': Support,
         'Storage': Storage,
+	'Author': Author;
     }
     return render(request, 'CloudasaService/virtualisation.html', context)
 
@@ -56,6 +58,7 @@ def detail(request):
     Publicorprivate = Material.objects.get(title='publicorprivate')
     Services = Material.objects.get(title='services')
     Costs = Material.objects.get(title='costs')
+    Author = Material.objects.get(title='author')
     Module = "detail"
     context = {
         'Module': Module,
@@ -65,6 +68,7 @@ def detail(request):
 	'Amazon': Amazon,
 	'MSA': MSA,
 	'GCP': GCP,
+	'Author': Author,
     }
     return render(request, 'CloudasaService/detail.html', context)
 
@@ -74,6 +78,7 @@ def virtual(request):
     Storage = Material.objects.get(title='storage')
     Scalability = Material.objects.get(title='scalability')
     Provisioning = Material.objects.get(title='provisioning')
+    Author = Material.objects.get(title='author')
     Module = "virtual"
     context = {
         'Module': Module,
@@ -82,6 +87,7 @@ def virtual(request):
         'Storage': Storage,
         'Scalability': Scalability,
         'Provisioning': Provisioning,
+	'Author': Author,
     }
     return render(request, 'CloudasaService/virtual.html', context)
 
