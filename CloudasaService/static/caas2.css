@@ -275,6 +275,16 @@ code {
 	margin: 0 auto;
 }
 
+.veryTopBtn {
+	height: 40px;
+	width: 200px;
+	float: left;
+	margin: 0px 0px 0px 0px;
+	font-size: 12px;
+	text-align: left;
+	color: #fff;
+}
+
 .subNavBtn {
 	display: block;
 	height: 30px;
