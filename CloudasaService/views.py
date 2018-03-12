@@ -91,6 +91,15 @@ def virtual(request):
     }
     return render(request, 'CloudasaService/virtual.html', context)
 
+def author(request):
+    Author = Material.objects.get(title='author')
+    Module = "author"
+    context = {
+        'Module': Module,
+	'Author': Author,
+    }
+    return render(request, 'CloudasaService/author.html', context)
+
 def description(request):
     Intro = Material.objects.get(title='description')
     context = {
@@ -104,14 +113,6 @@ def difference(request):
         'Intro': Intro,
     }
     return render(request, 'CloudasaService/difference.html', context)
-
-def author(request):
-    Intro = Material.objects.get(title='author')
-    context = {
-        'Intro': Intro,
-    }
-    return render(request, 'CloudasaService/author.html', context)
-
 
 def advantage(request):
     Intro = Material.objects.get(title='advantage')
