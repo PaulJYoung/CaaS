@@ -283,7 +283,9 @@ code {
 
 .veryTopBtn {
 	margin: 0px 0px 0px 0px;
-	font-size: 12px;
+	padding-top: 7px;
+	font-size: 14px;
+	text-decoration: none;
 	text-align: left;
 	color: #fff;
 }
