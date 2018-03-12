@@ -2,10 +2,18 @@
 {% load staticfiles %}
 {% block content %}
 	
-<div class="headcolumns">
-    <div class="innerwrap">
-        <p class="mainheading">Paul Young</p>
-        <p class="maintext">{{ Intro.title_content|linebreaksbr }}</p>
-    </div>
-</div>
+<div class="subMenu" >
+  <div class="inner">
+   <a href="#sTop" class="subNavBtn">Top</a>
+   <a href="#intro" class="subNavBtn">Author</a>
+  </div>
+ </div>
+
+ <div class="section intro">
+  <div class="inner homeNews">
+   <h1></h1>
+   <div class="content">{{ Intro.title_content|linebreaksbr }}</div>
+  </div>
+ </div>
+
 {% endblock %}
