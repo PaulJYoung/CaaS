@@ -144,7 +144,7 @@ code {
         overflow: hidden;
 }
 
-.socialbanner {
+.socialbanner div {
 	width: 10%;
 	float: left;
 }
@@ -282,9 +282,6 @@ code {
 }
 
 .veryTopBtn {
-	height: 40px;
-	width: 200px;
-	float: left;
 	margin: 0px 0px 0px 0px;
 	font-size: 12px;
 	text-align: left;
