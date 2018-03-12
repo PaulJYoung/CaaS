@@ -144,8 +144,13 @@ code {
         overflow: hidden;
 }
 
-.socialbanner {
-	width: 100px;
+.socialbannersmall {
+	width: 50px;
+	float: left;
+}
+
+.socialbannermedium {
+	width: 150px;
 	float: left;
 }
 
