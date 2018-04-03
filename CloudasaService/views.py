@@ -100,6 +100,21 @@ def author(request):
     }
     return render(request, 'CloudasaService/author.html', context)
 
+def comment(request):
+    if request.method == 'POST':
+        form = Comment(request.POST)
+        if form.is_valid():
+            firstname = form.cleaned_data['firstname']
+            surname = form.cleaned_data['surname']
+            emailaddr = form.cleaned_data['emailaddr']
+            comment = form.cleaned_data['comment']
+            comment_date = timezone.now()
+            p = post.objects.create(firstname=firstname, surname=surname, emailaddr=emailaddr, comment=comment)
+    else:
+        form = Comment()
+    return render(request, 'CloudasaService/comment.html', {'form': form})
+
+
 def description(request):
     Intro = Material.objects.get(title='description')
     context = {
