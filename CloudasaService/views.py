@@ -100,19 +100,19 @@ def author(request):
     }
     return render(request, 'CloudasaService/author.html', context)
 
-def comment(request):
+def contact(request):
     if request.method == 'POST':
-        form = Comment(request.POST)
+        form = Contact(request.POST)
         if form.is_valid():
             firstname = form.cleaned_data['firstname']
             surname = form.cleaned_data['surname']
             emailaddr = form.cleaned_data['emailaddr']
             comment = form.cleaned_data['comment']
             comment_date = timezone.now()
-            p = post.objects.create(firstname=firstname, surname=surname, emailaddr=emailaddr, comment=comment)
+            p = Contact.objects.create(firstname=firstname, surname=surname, emailaddr=emailaddr, comment=comment)
     else:
-        form = Comment()
-    return render(request, 'CloudasaService/comment.html', {'form': form})
+        form = Contact()
+    return render(request, 'CloudasaService/contact.html', {'form': form})
 
 
 def description(request):
