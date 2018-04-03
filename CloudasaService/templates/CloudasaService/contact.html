@@ -1,0 +1,23 @@
+{% extends "GnB/base.html" %}
+{% load staticfiles %}
+{% block nav %} <div class="clear midheadtrack"><a "midheadtrack" href="/GnB/">Home</a><a> | Post View |</a></div> {% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'GnB/gnb2.css' %}" />
+
+<div class="headcolumns2">
+    <div class="sitewrap">
+        <div class="headcolumns">
+                <div class="forminput clear">
+                        <form action="/GnB/createpost/" method="post">
+                            {% csrf_token %}
+                            <table class="forminput">
+                                {{ form.as_table }}
+                            </table>
+                            <input type="submit" name="correct" value="Is this information correct?" id="formsubyesgood"/>
+                        </form>
+                </div>
+                <div class="clear backlink"><a class="backlink" href="/GnB/">Back</a></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
