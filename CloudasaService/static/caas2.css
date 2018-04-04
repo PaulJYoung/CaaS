@@ -145,12 +145,12 @@ code {
 }
 
 .socialbannersmall {
-	width: 5%;
+	width: 15%;
 	float: left;
 }
 
 .socialbannermedium {
-	width: 10%;
+	width: 20%;
 	margin-top: 17px;
 	float: left;
 }
