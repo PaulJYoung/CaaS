@@ -1,20 +1,29 @@
 {% extends "CloudasaService/base.html" %}
 {% load staticfiles %}
 {% block content %}
-<div class="headcolumns2">
-    <div class="sitewrap">
-        <div class="headcolumns">
-                <div class="forminput clear">
-                        <form action="/CloudasaService/contact/" method="post">
-                            {% csrf_token %}
-                            <table class="forminput">
-                                {{ form.as_table }}
-                            </table>
-                            <input type="submit" name="correct" value="Is this information correct?" id="formsubyesgood"/>
-                        </form>
-                </div>
-                <div class="clear backlink"><a class="backlink" href="/GnB/">Back</a></div>
-        </div>
+
+ <div class="subMenu" >
+  <div class="inner">
+   <a href="#sTop" class="subNavBtn">Top</a>
+   <a href="#s7" class="subNavBtn">Author</a>
+  </div>
+ </div>
+
+ <div class="section s7">
+  <div class="inner">
+   <div class="col-1-1">
+    <div class="content">
+     <p class="header">Contact</p>
+     <form action="/CloudasaService/contact/" method="post">
+     {% csrf_token %}
+      <table class="">
+       {{ form.as_table }}
+      </table>
+      <input type="submit" name="correct" value="Is this information correct?" id=""/>
+     </form>  
     </div>
-</div>
+   </div><br class="clear">
+  </div>
+ </div>
+
 {% endblock %}
