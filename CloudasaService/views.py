@@ -10,7 +10,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.db.models import F
 from django.utils import timezone
-#from .forms import PostVote, NewPost, NewEntity, Speakers, AddUser
+from .forms import Contact
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.models import User
 from django.contrib.auth import login
