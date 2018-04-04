@@ -110,6 +110,7 @@ def contact(request):
             comment = form.cleaned_data['comment']
             comment_date = timezone.now()
             p = Contact.objects.create(firstname=firstname, surname=surname, emailaddr=emailaddr, comment=comment)
+	    return HttpResponseRedirect('/CaaS/')
     else:
         form = Contact()
     return render(request, 'CloudasaService/contact.html', {'form': form})
