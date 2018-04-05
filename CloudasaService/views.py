@@ -104,12 +104,12 @@ def contact(request):
     if request.method == 'POST':
         form = Contact(request.POST)
         if form.is_valid():
-            firstname = form.cleaned_data['firstname']
-            surname = form.cleaned_data['surname']
-            emailaddr = form.cleaned_data['emailaddr']
-            comment = form.cleaned_data['comment']
-            comment_date = timezone.now()
-            p = Contact.objects.create(firstname=firstname, surname=surname, emailaddr=emailaddr, comment=comment)
+            v_firstname = form.cleaned_data['firstname']
+            v_surname = form.cleaned_data['surname']
+            v_emailaddr = form.cleaned_data['emailaddr']
+            v_comment = form.cleaned_data['comment']
+            v_comment_date = timezone.now()
+            p = Contact.objects.create(firstname=v_firstname, surname=v_surname, emailaddr=v_emailaddr, comment=v_comment)
 	    return HttpResponseRedirect('/CaaS/')
     else:
         form = Contact()
