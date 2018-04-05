@@ -107,7 +107,7 @@ def contact(request):
             v_firstname = form.cleaned_data['firstname']
             v_surname = form.cleaned_data['surname']
             v_emailaddr = form.cleaned_data['emailaddr']
-            v_comment = form.cleaned_data['comment']
+            v_comment = form.cleaned_data['post']
             v_comment_date = timezone.now()
             p = Contact.objects.create(firstname=v_firstname, surname=v_surname, emailaddr=v_emailaddr, comment=v_comment)
 	    return HttpResponseRedirect('/CaaS/')
