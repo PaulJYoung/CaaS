@@ -37,7 +37,7 @@ class Rackspace(models.Model):
 	title_date = models.DateTimeField('date added')
 	def __str__(self):
         	return self.title
-
+	
 class Contact(models.Model):
 	firstname = models.CharField(max_length=50)
 	surname = models.CharField(max_length=50)
@@ -45,3 +45,11 @@ class Contact(models.Model):
 	comment = models.TextField(null=True, max_length=2000)
 	def __str__(self):
         	return self.title
+
+class ContactUs(models.Model):
+	firstname = models.CharField(max_length=50)
+	surname = models.CharField(max_length=50)
+	emailaddr = models.EmailField(max_length=100)
+	comment = models.TextField(null=True, max_length=2000)
+	def __str__(self):
+        	return self.firstname
