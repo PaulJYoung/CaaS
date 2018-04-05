@@ -5,12 +5,12 @@ from django.core.urlresolvers import reverse
 from django.views import generic
 from django.views.generic import DetailView
 from django.views.generic import ListView
-from .models import Material, AWS, Azure, Google, Contact
+from .models import Material, AWS, Azure, Google, ContactUs
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.db.models import F
 from django.utils import timezone
-from .forms import Contact
+from .forms import ContactForm
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.models import User
 from django.contrib.auth import login
@@ -100,9 +100,9 @@ def author(request):
     }
     return render(request, 'CloudasaService/author.html', context)
 
-def contact(request):
+def contactview(request):
     if request.method == 'POST':
-        form = Contact(request.POST)
+        form = ContactForm(request.POST)
         if form.is_valid():
             v_firstname = form.cleaned_data['firstname']
             v_surname = form.cleaned_data['surname']
@@ -112,7 +112,7 @@ def contact(request):
             p = Contact.objects.create(firstname=v_firstname, surname=v_surname, emailaddr=v_emailaddr, comment=v_comment)
 	    return HttpResponseRedirect('/CaaS/')
     else:
-        form = Contact()
+        form = ContactForm()
     return render(request, 'CloudasaService/contact.html', {'form': form})
 
 
