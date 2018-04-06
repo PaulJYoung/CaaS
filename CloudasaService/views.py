@@ -104,7 +104,7 @@ def contactview(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-	    form.errors['success'] = 'Saved'
+#           form.errors['success'] = 'Saved'
             v_firstname = form.cleaned_data['firstname']
             v_surname = form.cleaned_data['surname']
             v_emailaddr = form.cleaned_data['emailaddr']
