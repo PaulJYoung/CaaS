@@ -112,7 +112,7 @@ def contactview(request):
             v_comment = form.cleaned_data['post']
             v_comment_date = timezone.now()
             p = ContactUs.objects.create(firstname=v_firstname, surname=v_surname, emailaddr=v_emailaddr, comment=v_comment)
-            return render(request, 'CloudasaService/contact.html', {'form': form, 'message': message})
+            return render(request, 'CloudasaService/contact.html', {'message': message})
 #	    return HttpResponseRedirect('/CaaS/contact')
 #           return self.render_to_response(request, 'CloudasaService/contact.html', {'success':success})
     else:
