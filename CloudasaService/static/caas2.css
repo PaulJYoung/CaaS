@@ -29,6 +29,16 @@ h1.title {
 	letter-spacing: 1px;
 }
 
+.forminput {
+    width: 90%;
+    background-color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:  12pt;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
 .fbWrap {
 	position:absolute;
 	top: 0px;
