@@ -113,8 +113,8 @@ def contactview(request):
             p = ContactUs.objects.create(firstname=v_firstname, surname=v_surname, emailaddr=v_emailaddr, comment=v_comment)
 	    return HttpResponseRedirect('/CaaS/')
 #           return self.render_to_response(request, 'CloudasaService/contact.html', {'success':success})
-else:
-        form = ContactForm()
+        else:
+            form = ContactForm()
     return render(request, 'CloudasaService/contact.html', {'form': form})
 
 
