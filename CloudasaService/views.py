@@ -105,7 +105,7 @@ def contactview(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            messages.success(request, 'Saved')
+            message = messages.success(request, 'Saved')
             v_firstname = form.cleaned_data['firstname']
             v_surname = form.cleaned_data['surname']
             v_emailaddr = form.cleaned_data['emailaddr']
@@ -116,7 +116,7 @@ def contactview(request):
 #           return self.render_to_response(request, 'CloudasaService/contact.html', {'success':success})
     else:
             form = ContactForm()
-    return render(request, 'CloudasaService/contact.html', {'form': form})
+    return render(request, 'CloudasaService/contact.html', {'form': form, 'message': message})
 
 
 def description(request):
