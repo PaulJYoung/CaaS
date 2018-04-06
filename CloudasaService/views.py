@@ -105,14 +105,14 @@ def contactview(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            message = messages.success(request, 'Saved')
+            messages.success(request, 'Saved')
             v_firstname = form.cleaned_data['firstname']
             v_surname = form.cleaned_data['surname']
             v_emailaddr = form.cleaned_data['emailaddr']
             v_comment = form.cleaned_data['post']
             v_comment_date = timezone.now()
             p = ContactUs.objects.create(firstname=v_firstname, surname=v_surname, emailaddr=v_emailaddr, comment=v_comment)
-            return render(request, 'CloudasaService/contact.html', {'message': message})
+            return render(request, 'CloudasaService/contact.html')
 #	    return HttpResponseRedirect('/CaaS/contact')
 #           return self.render_to_response(request, 'CloudasaService/contact.html', {'success':success})
     else:
