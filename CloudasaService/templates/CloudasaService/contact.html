@@ -14,11 +14,6 @@
    <div class="col-1-1">
     <div class="content">
      <p class="header">Contact</p>
-      {% if messages %}
-       {% for message in messages %}
-        {{ messsage }}
-       {% endfor %}
-      {% endif %}
      <form action="/CaaS/contact/" method="post">
      {% csrf_token %}
       <table class="forminput">
