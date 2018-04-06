@@ -15,6 +15,7 @@ from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.models import User
 from django.contrib.auth import login
 from django.views.decorators.csrf import ensure_csrf_cookie, csrf_exempt
+from django.contrib import messages
 
 #@xframe_options_exempt
 def index(request):
@@ -104,7 +105,7 @@ def contactview(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            form.errors['success'] = 'Saved'
+            messages.success(request, 'Saved')
             v_firstname = form.cleaned_data['firstname']
             v_surname = form.cleaned_data['surname']
             v_emailaddr = form.cleaned_data['emailaddr']
