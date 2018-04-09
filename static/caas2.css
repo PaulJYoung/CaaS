@@ -29,6 +29,15 @@ h1.title {
 	letter-spacing: 1px;
 }
 
+.forminput {
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-size:  12pt;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
 .fbWrap {
 	position:absolute;
 	top: 0px;
@@ -135,6 +144,38 @@ code {
 	padding-top: 5px;
 }
 
+/* added 021017 */
+.socialm {
+        width: 100%;
+	background: #0077b5;
+/*        height: 16px; */
+	height: 33px;
+        overflow: hidden;
+}
+
+.socialbannersmall {
+	width: 15%;
+	float: left;
+}
+
+.socialbannermedium {
+	width: 17%;
+	margin-top: 16px;
+	float: left;
+}
+
+/* END added 021017 */
+
+.floatleft {
+        float: left;
+/*        width: 300; */
+}
+
+.floatright {
+        float: right;
+        width: 300;
+}
+
 .inner {
 	width: 960px;
 	margin: 0 auto;
@@ -192,6 +233,11 @@ code {
 	padding:0 20px 0 0;
 }
 
+.contentbold {
+        padding:0 20px 0 0;
+	font-weight: bold;
+}
+
 .homeNews {
 	padding:20px 0 0 0;
 	text-align: left;
@@ -230,8 +276,8 @@ code {
 	min-height: 39px;
 	z-index: 1000;
 	width: 440px;
-        border-top-left-radius: 2em;
-        border-top-right-radius: 2em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
 /*        background: #1b57a4; */
 /*	background: #184764; */
 /*	background: #0977bc; */
@@ -250,6 +296,14 @@ code {
 	margin: 0 auto;
 }
 
+.veryTopBtn {
+	padding: 8px 0px 0px 0px;
+	font-size: 11px;
+	text-decoration: none;
+	text-align: left;
+	color: #fff;
+}
+
 .subNavBtn {
 	display: block;
 	height: 30px;
@@ -257,7 +311,7 @@ code {
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 14px;
 	padding: 7px 0% 0 0%;
 	text-align: center;
 	color: #fff;
@@ -270,10 +324,10 @@ code {
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 12px;
 	padding: 8px 0% 0 0%;
 	text-align: center;
-        border-top-left-radius: 2em;
+        border-top-left-radius: 1em;
 /*	color: #fff; */
         color: #ff7f00;
 }
@@ -285,10 +339,10 @@ code {
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 12px;
 	padding: 8px 0% 0 0%;
 	text-align: center;
-        border-top-right-radius: 2em;
+        border-top-right-radius: 1em;
 /*	color: #fff; */
         color: #ff7f00;
 }
@@ -300,7 +354,7 @@ code {
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 12px;
 	padding: 8px 0% 0 0%;
 	text-align: center;
 /*	color: #fff; */
@@ -313,7 +367,7 @@ code {
 	float: left;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 12px;
 	padding: 8px 0% 0 0%;
 	text-align: center;
 /*	color: #fff; */
@@ -331,8 +385,8 @@ code {
 
 .topsubMenu a:hover {
 	background: #1783c7;
-        border-top-left-radius: 2em;
-        border-top-right-radius: 2em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
 }
 
 .active {
@@ -386,6 +440,7 @@ code {
 
 .s2 {
 	background: #1b83b3;
+	padding:  0px 0 20 0;
 }
 
 .s3 {
@@ -398,10 +453,12 @@ code {
 
 .s3 .header {
 	color: #3d3d3d;
+	padding:  0px 0 20 0;
 }
 
 .s8 .header {
 	color: #3d3d3d;
+	padding:  0px 0 20 0;
 }
 
 .s4 {
@@ -409,21 +466,25 @@ code {
 	background: #bce1f1;
 	background-position: right 40px;
 	color: #3d3d3d;
+	padding:  0px 0 20 0;
 }
 
 .s5 {
 	min-height: 304px;
 	background: #161616;
+	padding:  0px 0 20 0;
 }
 
 .s6 {
         min-height: 304px;
         background: #1b83b3;
+	padding:  0px 0 20 0;
 }
 
 .s7 {
         min-height: 304px;
         background: #161616;
+	padding:  0px 0 20 0;
 }
 
 .s8 {
@@ -437,30 +498,36 @@ code {
 .s9 {
         min-height: 304px;
 	background: #313131;
+	padding:  0px 0 20 0;
 }
 
 .s10 {
         min-height: 304px;
         background: #1b83b3;
+	padding:  0px 0 20 0;
 }
 
 .s11 {
         min-height: 304px;
         background: #161616;
+	padding:  0px 0 20 0;
 }
 
 .s12 {
         min-height: 304px;
         background: #1b83b3;
+	padding:  0px 0 20 0;
 }
 
 .s13 {
         min-height: 304px;
 	color:#424242;
+	padding:  0px 0 20 0;
 }
 
 .s13 .header {
 	color: #3d3d3d;
+	padding:  0px 0 20 0;
 }
 
 .s14 {
@@ -474,11 +541,13 @@ code {
 .s15 {
         min-height: 304px;
         background: #161616;
+	padding:  0px 0 20 0;
 }
 
 .s16 {
         min-height: 304px;
         background: #161616;
+	padding:  0px 0 20 0;
 }
 
 .s5 a {
