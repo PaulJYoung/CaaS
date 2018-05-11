@@ -1,14 +1,14 @@
 import datetime
-AWS_ACCESS_KEY_ID = "<your_access_key_id>"
-AWS_SECRET_ACCESS_KEY = "<your_secret_access_key>"
+AWS_ACCESS_KEY_ID = "AKIAIOTEAJVOXXDMKITA"
+AWS_SECRET_ACCESS_KEY = "RJNMrkvblOaw48/QdymujP70FLgaNg8wQfAtDxP4"
 AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
 AWS_QUERYSTRING_AUTH = True
 
-DEFAULT_FILE_STORAGE = '<your-project>.aws.utils.MediaRootS3BotoStorage'
-STATICFILES_STORAGE = '<your-project>.aws.utils.StaticRootS3BotoStorage'
-AWS_STORAGE_BUCKET_NAME = '<your_bucket_name>'
-S3DIRECT_REGION = 'us-west-2'
+DEFAULT_FILE_STORAGE = 'CaaS.aws.utils.MediaRootS3BotoStorage'
+STATICFILES_STORAGE = 'CaaS.aws.utils.StaticRootS3BotoStorage'
+AWS_STORAGE_BUCKET_NAME = 'caas-data-001'
+S3DIRECT_REGION = 'eu-west-2a'
 S3_URL = '//%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
 MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
 MEDIA_ROOT = MEDIA_URL
