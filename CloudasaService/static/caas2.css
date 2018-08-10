@@ -569,7 +569,6 @@ code {
 		position: relative;
 		margin: 0 auto;
 		padding: 0;
-
 }
 
 .codeImg {
@@ -602,8 +601,6 @@ code {
 	padding: 15px 0;
 }
 
-
-
 .subMenu {
 	position: relative;
 	min-height: 50px;
@@ -611,8 +608,6 @@ code {
 	width: 100%;
 	max-width: 640px;
 	min-width: 320px;
-	
-
 }
 
 .subMenu .inner {
@@ -620,26 +615,17 @@ code {
 	padding: 0;
 }
 .subNavBtn {
-	
 	font-size: 12px;
-	
-	
-
 }
-
 
 .s1, .s3 {
 	padding:  0px 0 0 0;
 }
 
-
-
 .logo{
 	margin:0;
 	width: 30%;
 }
-
-
 
 h1.title {
 	font-size: 28px;
@@ -660,13 +646,9 @@ h2.subtitle {
 .logo{
 	width: 30%
 }
-.wrap {
-		
+.wrap {		
 		max-width: 480px;
-		
-
 }
-
 
 .sTop {
 	
@@ -687,21 +669,17 @@ h2.subtitle {
 	font-size: 12px;
 	padding: 15px 2% 0 2%;
 	text-align: center;
-	
-
 }
 
 .twWrap {
 	right:none;
 	left:0;
-
 }
 
 .subMenu {
 	height: 90px;
 	/*top: 356px;*/
 	max-width: 480px;
-	
 }
 
 .homeNews {
@@ -710,16 +688,12 @@ h2.subtitle {
 
 }
 
-
-
-
 @media screen and(min-width: 330px) and (max-width: 480px) { 
-.wrap {
-		
-		max-width: 320px;
-		
 
+.wrap {		
+		max-width: 320px;
 }
+	
 .sTop {
 	
 }
@@ -727,13 +701,12 @@ h2.subtitle {
 .s1 {
 	height: auto;
 	background-image: none;
-	}
+}
 
 h1.title {
 	font-size: 28px;
 	width: 48%
 }
-
 
 .sTop .txtCenter h1, .sTop .txtCenter h2, .sTop .txtCenter p {
 	float: left;
@@ -745,17 +718,15 @@ h1.title {
 	height: auto;
 	max-width: 271px;
 	float:left;
+}
 
-	}
-
-	.subMenu {
+.subMenu {
 		top:290px;
 		max-width: 320px;
-	}
+}
 
 .fxd{
-	top: none!!important;
-	
+	top: none!!important;	
 	bottom:0!important;
 }
 
@@ -765,13 +736,12 @@ p.header{
 
 }
 
-
-
-
 @media screen and (max-width: 480px) { 
+
 .inner {
 	font-size: 16px;
 }
+
 .sTop {
 	
 }
@@ -779,7 +749,7 @@ p.header{
 .s1 {
 	height: auto;
 	background-image: none;
-	}
+}
 
 h1.title {
 	font-size: 28px;
@@ -794,7 +764,6 @@ h1.title {
 	float: none;
 }
 
-
 .subNavBtn {
 	display: block;
 	height: 35px;
@@ -806,10 +775,7 @@ h1.title {
 	padding: 10px 2% 0 2%;
 	text-align: center;
 	line-height: 110%;
-	
-
 }
-
 
 .logo {
 	margin:0px 0 20px 0;
@@ -817,16 +783,14 @@ h1.title {
 	height: auto;
 	max-width: 271px;
 	float:none;
-
-	}
+}
 
 	.subMenu {
 		/*top:290px;*/
-	}
+}
 
 .fxd{
-	top: none!!important;
-	
+	top: none!!important;	
 	bottom:0!important;
 }
 
