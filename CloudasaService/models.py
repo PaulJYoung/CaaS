@@ -53,3 +53,10 @@ class ContactUs(models.Model):
 	comment = models.TextField(null=True, max_length=2000)
 	def __str__(self):
         	return self.firstname
+
+class Lists(models.Model):
+	title = models.CharField(max_length=50)
+	title_content = models.TextField(null=True, max_length=1500)
+	title_date = models.DateTimeField('date added')
+	def __str__(self):
+        	return self.title
