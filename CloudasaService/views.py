@@ -21,6 +21,8 @@ from django.contrib import messages
 def index(request):
     Intro = Material.objects.get(title='intro')
     Description = Material.objects.get(title='description')
+    DescriptionPostlist = Material.objects.get(title='descriptionPostlist')
+    DescriptionList = Lists.objects.get()
     Advantage = Material.objects.get(title='advantage')
     Publicdis = Material.objects.get(title='publicdis')
     Privatedis = Material.objects.get(title='privatedis')
