@@ -30,16 +30,19 @@ h1.title {
 }
 
 .lists {
-	font-size: 15px;
+	font-size: 17px;
 	background: #bce1f1;
+	color: black;
 	width: 100px;
 	padding: 10px 10px 10px 0;
+	border: 10px 0 0 0;
 }
 
 .listslong {
 	font-size: 15px;
 	width: 400px;
 	padding: 10px 0 10px 0;
+	border: 10px 0 0 0;
 }
 
 .forminput {
