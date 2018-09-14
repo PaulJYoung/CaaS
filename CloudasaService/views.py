@@ -33,7 +33,7 @@ def index(request):
         'Module': Module,
 	'Intro': Intro,
         'Description': Description,
-	'DescriptionPostList': DescriptionPostList,
+	'DescriptionPostlist': DescriptionPostlist,
 	'DescriptionList': DescriptionList,
         'Advantage': Advantage,
         'Publicdis': Publicdis,
