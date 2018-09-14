@@ -22,7 +22,7 @@ def index(request):
     Intro = Material.objects.get(title='intro')
     Description = Material.objects.get(title='description')
     DescriptionPostlist = Material.objects.get(title='descriptionPostlist')
-    DescriptionList = Lists.objects.filter(section__contains='whatiscloud').order_by('date_added')
+    DescriptionList = Lists.objects.filter(section__contains='whatiscloud').order_by('title_date')
     Advantage = Material.objects.get(title='advantage')
     Publicdis = Material.objects.get(title='publicdis')
     Privatedis = Material.objects.get(title='privatedis')
