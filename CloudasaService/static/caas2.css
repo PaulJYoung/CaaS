@@ -31,8 +31,8 @@ h1.title {
 
 .lists {
 	font-size: 17px;
-	background: #bce1f1;
-	color: black;
+	color: lightgrey;
+	font-style: bold;
 	width: 100px;
 	padding: 10px 10px 10px 0;
 	border: 10px 0 0 0;
