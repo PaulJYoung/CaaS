@@ -29,6 +29,10 @@ h1.title {
 	letter-spacing: 1px;
 }
 
+.lists {
+	font-size: 6px;
+}
+
 .forminput {
     width: 90%;
     font-family: 'Open Sans', sans-serif;
