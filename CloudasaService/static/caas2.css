@@ -30,13 +30,13 @@ h1.title {
 }
 
 .lists {
-	font-size: 12px;
+	font-size: 15px;
 	width: 100px;
-	padding: 10px 0 10px 0;
+	padding: 10px 10px 10px 0;
 }
 
 .listslong {
-	font-size: 12px;
+	font-size: 15px;
 	width: 400px;
 	padding: 10px 0 10px 0;
 }
