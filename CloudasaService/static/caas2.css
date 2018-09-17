@@ -455,7 +455,7 @@ code {
 
 .s1 {
 #       background: #313131;
-	background: url("/CaaS/static/newcloud3.png");
+	background: url('newcloud3.png');
 	padding:  0px 0 20 0;
 }
 
