@@ -46,7 +46,7 @@ h1.title {
 }
 
 .cloudbg {
-	background: url("./static/newcloud3.png");
+	background: url("/CaaS/static/newcloud3.png");
 }
 
 .forminput {
