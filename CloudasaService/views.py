@@ -24,6 +24,8 @@ def index(request):
     DescriptionPostlist = Material.objects.get(title='descriptionPostlist')
     DescriptionList = Lists.objects.filter(section__contains='whatiscloud').order_by('title_date')
     Advantage = Material.objects.get(title='advantage')
+    AdvantagePostlist = Material.objects.get(title='advantagePostlist')
+    AdvantageList = Lists.objects.filter(section__contains='theclearadvantages').order_by('title_date')
     Publicdis = Material.objects.get(title='publicdis')
     Privatedis = Material.objects.get(title='privatedis')
     Publicorprivate = Material.objects.get(title='publicorprivate')
@@ -36,6 +38,8 @@ def index(request):
 	'DescriptionPostlist': DescriptionPostlist,
 	'DescriptionList': DescriptionList,
         'Advantage': Advantage,
+	'AdvantageList' = AdvantageList,
+	'AdvantagePostlist' = AdvantagePostlist,
         'Publicdis': Publicdis,
         'Privatedis': Privatedis,
 	'Publicorprivate': Publicorprivate,
