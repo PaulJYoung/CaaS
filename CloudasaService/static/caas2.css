@@ -46,7 +46,7 @@ h1.title {
 }
 
 .cloudbg {
-	background: url('{{ STATIC_URL }}newcloud3.png');
+	background: url("/static/newcloud3.png");
 }
 
 .forminput {
