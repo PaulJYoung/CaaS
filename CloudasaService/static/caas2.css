@@ -45,7 +45,7 @@ h1.title {
 	border: 10px 0 0 0;
 }
 
-.cloudbg {
+.cloudbg p {
 	background: url("/CaaS/static/newcloud3.png");
 }
 
@@ -454,8 +454,8 @@ code {
 }
 
 .s1 {
-#       background: #313131;
-	background: url('newcloud3.png');
+        background: #313131;
+#	background: url('newcloud3.png');
 	padding:  0px 0 20 0;
 }
 
