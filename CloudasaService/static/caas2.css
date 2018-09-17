@@ -34,14 +34,14 @@ h1.title {
 	color: lightgrey;
 	font-style: bold;
 	width: 200px;
-	padding: 10px 10px 10px 0;
+	padding: 10px 10px 20px 0;
 	border: 10px 0 0 0;
 }
 
 .listslong {
 	font-size: 15px;
 	width: 400px;
-	padding: 10px 0 10px 0;
+	padding: 10px 0 20px 0;
 	border: 10px 0 0 0;
 }
 
