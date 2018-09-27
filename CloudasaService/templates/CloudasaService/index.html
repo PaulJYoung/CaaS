@@ -7,9 +7,9 @@
    <a href="#sTop" class="subNavBtn">Top</a>
    <a href="#intro" class="subNavBtn">Intro</a>
    <a href="#s1" class="subNavBtn">What is Cloud?</a>
-   <a href="#s2" class="subNavBtn">Advantages</a>
-   <a href="#s3" class="subNavBtn">Disadvantages</a>
-   <a href="#s4" class="subNavBtn end">Public Private</a>
+   <a href="#s2" class="subNavBtn">Why bother?</a>
+   <a href="#s3" class="subNavBtn">Pros & Cons</a>
+   <a href="#s4" class="subNavBtn end">Public or Private</a>
   </div>
  </div>
 
@@ -26,12 +26,24 @@
      <p class="header">What exactly is Cloud?</p>
      <div class="content">{{ Description.title_content|linebreaksbr }}</div>
      {% for item in DescriptionList %}
-         <div class="lists floatleft">{{ item.title }}</div>
-         <div class="listslong floatleft">{{ item.title_content }}</div>
-	 <div class="clear"></div>
+         {% if item.listno == "one" %}
+             <div class="lists floatleft">{{ item.title }}</div>
+             <div class="listslong floatleft">{{ item.title_content }}</div>
+	     <div class="clear"></div>
+         {% endif %}
      {% endfor %}
      <div class="clear content">{{ DescriptionPostlist.title_content|linebreaksbr }}</div>
+     {% for item in DescriptionList %}
+	 {% if item.listno == "two" %}
+             <div class="lists floatleft">{{ item.title }}</div>
+             <div class="listslong floatleft">{{ item.title_content }}</div>
+	     <div class="clear"></div>
+         {% endif %}
+     {% endfor %}
   <!-- <div class="col-1-3"><img class="picDisplay" src="{% static "newcloud2.JPG" %}"/></div> -->
+   </div>
+   <div class="col-1-3">
+	   <p class="cloudbg"></p>
    </div><br class="clear">
   </div>
  </div>
@@ -40,8 +52,16 @@
   <div class="inner">
    <div class="col-1-3">&nbsp;</div>
    <div class="col-2-3">
-    <p class="header">The clear advantages are...</p>
-    <div class="content">{{ Advantage.title_content|linebreaksbr }}</div>
+   <p class="header">Help me decide!</p>
+   <div class="content">{{ Advantage.title_content|linebreaksbr }}</div>
+   {% for item in AdvantageList %}
+       {% if item.listno == "one" %}
+           <div class="listsnarrow floatleft">{{ item.title }}</div>
+           <div class="listslong floatleft">{{ item.title_content }}</div>
+	   <div class="clear"></div>
+       {% endif %}
+   {% endfor %}
+   <div class="content">{{ AdvantagePostlist.title_content|linebreaksbr }}</div>
    </div><br class="clear">
   </div>
  </div>

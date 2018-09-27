@@ -34,15 +34,28 @@ h1.title {
 	color: lightgrey;
 	font-style: bold;
 	width: 200px;
-	padding: 10px 10px 10px 0;
+	padding: 10px 10px 20px 0;
+	border: 10px 0 0 0;
+}
+
+.listsnarrow {
+	font-size: 16px;
+	color: lightgrey;
+	font-style: bold;
+	width: 100px;
+	padding: 10px 10px 20px 0;
 	border: 10px 0 0 0;
 }
 
 .listslong {
 	font-size: 15px;
 	width: 400px;
-	padding: 10px 0 10px 0;
+	padding: 10px 0 20px 0;
 	border: 10px 0 0 0;
+}
+
+.cloudbg p {
+	background: url("/CaaS/static/newcloud3.png");
 }
 
 .forminput {
@@ -450,7 +463,8 @@ code {
 }
 
 .s1 {
-	background: #313131;
+        background: #313131;
+#	background: url('newcloud3.png');
 	padding:  0px 0 20 0;
 }
 
