@@ -70,7 +70,13 @@ h1.title {
 .formlblbox {
     font-family: 'Open Sans', sans-serif;
     font-size: 10pt;
-    padding: 5px 0 5px 0;
+    padding: 5px 0 5px 5px;
+}
+
+.formtxtbox {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    padding: 5px 0 5px 5px;
 }
 
 .fbWrap {
