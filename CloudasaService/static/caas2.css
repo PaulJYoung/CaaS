@@ -79,6 +79,15 @@ h1.title {
     padding: 5px 0 5px 5px;
 }
 
+.submitbutton {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 9pt;
+    height: 20px;
+    width: 50px;
+    border: solid 1px;
+    color: lightblue;
+}
+	
 .fbWrap {
 	position:absolute;
 	top: 0px;
