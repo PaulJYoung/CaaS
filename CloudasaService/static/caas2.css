@@ -86,6 +86,8 @@ h1.title {
     width: 50px;
     border: solid 1px;
     color: lightblue;
+    backgounr-color: darkblue;
+    margin-left: 10px;
 }
 	
 .fbWrap {
