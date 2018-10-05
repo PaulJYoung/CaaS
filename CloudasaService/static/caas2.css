@@ -61,10 +61,10 @@ h1.title {
 .forminput {
     width: 90%;
     font-family: 'Open Sans', sans-serif;
-    font-size:  9pt;
+    font-size:  10pt;
     font-weight: normal;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .fbWrap {
