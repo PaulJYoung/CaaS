@@ -210,20 +210,21 @@ code {
 .socialbannersmall {
 	width: 50px;
 	float: left;
-	text-align: centre;
+	text-align: center;
 }
 
 .socialbannermedium {
 	width: 100px;
 	margin-top: 16px;
 	float: left;
-	text-align: centre;
+	text-align: center;
 }
 
 .socialbannertiny {
 	width: 20px;
 	margin-top: 16px;
 	float: left;
+	text-align: center;
 }
 
 /* END added 021017 */
