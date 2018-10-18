@@ -208,18 +208,18 @@ code {
 }
 
 .socialbannersmall {
-	width: 15%;
+	width: 50px;
 	float: left;
 }
 
 .socialbannermedium {
-	width: 17%;
+	width: 100px;
 	margin-top: 16px;
 	float: left;
 }
 
 .socialbannertiny {
-	width: 5%;
+	width: 20px;
 	margin-top: 16px;
 	float: left;
 }
