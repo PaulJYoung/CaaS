@@ -210,12 +210,14 @@ code {
 .socialbannersmall {
 	width: 50px;
 	float: left;
+	text-align: centre;
 }
 
 .socialbannermedium {
 	width: 100px;
 	margin-top: 16px;
 	float: left;
+	text-align: centre;
 }
 
 .socialbannertiny {
