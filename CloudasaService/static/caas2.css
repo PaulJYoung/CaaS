@@ -218,6 +218,12 @@ code {
 	float: left;
 }
 
+.socialbannermedium {
+	width: 5%;
+	margin-top: 16px;
+	float: left;
+}
+
 /* END added 021017 */
 
 .floatleft {
