@@ -80,8 +80,8 @@ def detail(request):
 	'MSA': MSA,
 	'GCP': GCP,
 	'Author': Author,
-	'ServicesList' = ServicesList,
-	'ServicesPostlist' = ServicesPostlist,
+	'ServicesList': ServicesList,
+	'ServicesPostlist': ServicesPostlist,
     }
     return render(request, 'CloudasaService/detail.html', context)
 
