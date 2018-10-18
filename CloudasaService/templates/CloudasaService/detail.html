@@ -19,13 +19,14 @@
     <div class="content">
      <p class="header">The Services...</p>
      <div class="content">{{ Services.title_content|linebreaksbr }}</div>
-     {% for item in DescriptionList %}
-         {% if item.listno == "one" %}
+     {% for item in ServicesList %}
+         {% if item.listno == "three" %}
              <div class="lists floatleft">{{ item.title }}</div>
              <div class="listslong floatleft">{{ item.title_content }}</div>
 	     <div class="clear"></div>
          {% endif %}
      {% endfor %}
+     <div class="content">{{ ServicesPostlist.title_content|linebreaksbr }}</div>
     </div>
    </div><br class="clear">
    <div>&nbsp;</div>
