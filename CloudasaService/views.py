@@ -66,6 +66,8 @@ def detail(request):
     GCP = Google.objects.order_by('title_date')[:10]
     Publicorprivate = Material.objects.get(title='publicorprivate')
     Services = Material.objects.get(title='services')
+    ServicesList = Lists.objects.filter(section__contains='services').order_by('title_date')
+    ServicesPostlist = Material.objects.get(title='servicesPostlist')
     Costs = Material.objects.get(title='costs')
     Author = Material.objects.get(title='author')
     Module = "detail"
@@ -78,6 +80,8 @@ def detail(request):
 	'MSA': MSA,
 	'GCP': GCP,
 	'Author': Author,
+	'ServicesList' = ServicesList,
+	'ServicesPostlist' = ServicesPostlist,
     }
     return render(request, 'CloudasaService/detail.html', context)
 
