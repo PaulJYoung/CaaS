@@ -141,3 +141,9 @@ STATIC_ROOT = '/CaaS/static/'
 
 LOGIN_REDIRECT_URL = '/CaaS/'
 LOGIN_URL = '/CaaS/login/'
+
+# AWS Storage for static files
+
+if not DEBUG:
+    AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']
+    STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
