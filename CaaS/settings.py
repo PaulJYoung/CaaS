@@ -149,8 +149,8 @@ AWS_DEFAULT_ACL = 'public-read'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 REGION_HOST = 's3.eu-west-2.amazonaws.com'
 if not DEBUG:
-    AWS_ACCESS_KEY_ID = 'AKIAIBCKP2DWF2IFEFNQ'
-    AWS_SECRET_ACCESS_KEY = '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'
+#   AWS_ACCESS_KEY_ID = 'AKIAIBCKP2DWF2IFEFNQ'
+#   AWS_SECRET_ACCESS_KEY = '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'
 #   AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']
     AWS_STORAGE_BUCKET_NAME = 'caas-static-prod'
     STATIC_URL = "https://d6idje9xyotdi.cloudfront.net/"
