@@ -144,6 +144,11 @@ LOGIN_URL = '/CaaS/login/'
 
 # AWS Storage for static files
 
+AWS_STORAGE_BUCKET_NAME = 'caas-static-prod'
+AWS_DEFAULT_ACL = 'public-read'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
 if not DEBUG:
     AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']
+    STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
     STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
