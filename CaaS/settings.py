@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'CloudasaService',
     'storages',
+    'django_mysql',
 ]
 
 MIDDLEWARE_CLASSES = [
