@@ -72,4 +72,4 @@ class Updates(models.Model):
 	)
 	title_date = models.DateTimeField('updated')
 	def __str__(self):
-       	return self.title
+       	        return self.title
