@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
-from django_mysql.models import ListCharField
+#from django_mysql.models import ListCharField
 
 
 class Material(models.Model):
@@ -64,12 +64,12 @@ class Lists(models.Model):
 	def __str__(self):
         	return self.title
 
-class Updates(models.Model):
-	title = models.ListCharField(
-		base_field = models.CharField(max_length=30),
-		size = 5,
-		max_length = (5 * 31)
-	)
-	title_date = models.DateTimeField('updated')
-	def __str__(self):
-        	return self.title
+#class Updates(models.Model):
+#	title = models.ListCharField(
+#		base_field = models.CharField(max_length=30),
+#		size = 5,
+#		max_length = (5 * 31)
+#	)
+#	title_date = models.DateTimeField('updated')
+#	def __str__(self):
+#       	return self.title
