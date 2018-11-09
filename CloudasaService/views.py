@@ -5,7 +5,7 @@ from django.core.urlresolvers import reverse
 from django.views import generic
 from django.views.generic import DetailView
 from django.views.generic import ListView
-from .models import Material, AWS, Azure, Google, ContactUs, Lists
+from .models import Material, AWS, Azure, Google, ContactUs, Lists, Updates
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.db.models import F
@@ -29,7 +29,7 @@ def index(request):
     Publicdis = Material.objects.get(title='publicdis')
     Privatedis = Material.objects.get(title='privatedis')
     Publicorprivate = Material.objects.get(title='publicorprivate')
-    Author = Material.objects.get(title='author')
+#   Author = Material.objects.get(title='author')
     Module = "index"
     context = {
         'Module': Module,
@@ -43,7 +43,7 @@ def index(request):
         'Publicdis': Publicdis,
         'Privatedis': Privatedis,
 	'Publicorprivate': Publicorprivate,
-        'Author': Author,
+#       'Author': Author,
     }
     return render(request, 'CloudasaService/index.html', context)
 
@@ -51,12 +51,12 @@ def virtualisation(request):
     Intro = Material.objects.get(title='history')
     Support = Material.objects.get(title='support')
     Storage = Material.objects.get(title='storage')
-    Author = Material.objects.get(title='author')
+#   Author = Material.objects.get(title='author')
     context = {
         'Intro': Intro,
         'Support': Support,
         'Storage': Storage,
-	'Author': Author,
+#       'Author': Author,
     }
     return render(request, 'CloudasaService/virtualisation.html', context)
 
@@ -69,7 +69,7 @@ def detail(request):
     ServicesList = Lists.objects.filter(section__contains='services').order_by('title_date')
     ServicesPostlist = Material.objects.get(title='servicesPostlist')
     Costs = Material.objects.get(title='costs')
-    Author = Material.objects.get(title='author')
+#   Author = Material.objects.get(title='author')
     Module = "detail"
     context = {
         'Module': Module,
@@ -79,7 +79,7 @@ def detail(request):
 	'Amazon': Amazon,
 	'MSA': MSA,
 	'GCP': GCP,
-	'Author': Author,
+#	'Author': Author,
 	'ServicesList': ServicesList,
 	'ServicesPostlist': ServicesPostlist,
     }
@@ -91,7 +91,7 @@ def virtual(request):
     Storage = Material.objects.get(title='storage')
     Scalability = Material.objects.get(title='scalability')
     Provisioning = Material.objects.get(title='provisioning')
-    Author = Material.objects.get(title='author')
+#   Author = Material.objects.get(title='author')
     Module = "virtual"
     context = {
         'Module': Module,
@@ -100,7 +100,7 @@ def virtual(request):
         'Storage': Storage,
         'Scalability': Scalability,
         'Provisioning': Provisioning,
-	'Author': Author,
+#	'Author': Author,
     }
     return render(request, 'CloudasaService/virtual.html', context)
 
