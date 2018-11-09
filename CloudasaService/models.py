@@ -66,7 +66,7 @@ class Lists(models.Model):
 
 class Updates(models.Model):
 	title = models.ListCharField(
-		base_field = models.CharField(max_length=30),
+		base_field = CharField(max_length=30),
 		size = 5,
 		max_length = (5 * 31)
 	)
