@@ -1,7 +1,6 @@
 from __future__ import unicode_literals
 
 from django.db import models
-from django.db.models import CharField, Model
 from django_mysql.models import ListCharField
 
 
@@ -66,8 +65,8 @@ class Lists(models.Model):
         	return self.title
 
 class Updates(models.Model):
-	title = models.ListCharField(
-		base_field = CharField(max_length=30),
+	title = ListCharField(
+		base_field = models.CharField(max_length=30),
 		size = 5,
 		max_length = (5 * 31)
 	)
