@@ -145,7 +145,8 @@ LOGIN_URL = '/CaaS/login/'
 # AWS Storage for static files
 AWS_STORAGE_BUCKET_NAME = 'caas-static-prod'
 AWS_DEFAULT_ACL = 'public-read'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+#AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_CUSTOM_DOMAIN = 'd6idje9xyotdi.cloudfront.net'
 REGION_HOST = 's3.eu-west-2.amazonaws.com'
 if not DEBUG:
 
