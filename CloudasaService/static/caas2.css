@@ -59,7 +59,7 @@ h1.title {
 }
 
 .forminput {
-    width: 150px;
+    width: 300px;
     font-family: 'Open Sans', sans-serif;
     font-size:  9pt;
     font-weight: normal;
@@ -497,8 +497,7 @@ code {
 }
 
 .s1 {
-        background: #313131;
-#	background: url('newcloud3.png');
+    background: #313131;
 	padding:  0px 0 20 0;
 }
 
@@ -790,7 +789,7 @@ h1.title {
 }
 
 .fxd{
-	top: none!!important;	
+	top: none!important;	
 	bottom:0!important;
 }
 
@@ -854,7 +853,7 @@ h1.title {
 }
 
 .fxd{
-	top: none!!important;	
+	top: none!important;	
 	bottom:0!important;
 }
 
