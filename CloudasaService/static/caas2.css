@@ -220,6 +220,13 @@ code {
 	text-align: center;
 }
 
+.socialbannermedium {
+	width: 500px;
+	margin-top: 17px;
+	float: left;
+	text-align: center;
+}
+
 .socialbannertiny {
 	width: 50px;
 	margin-top: 17px;
