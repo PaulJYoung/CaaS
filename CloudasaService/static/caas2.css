@@ -222,10 +222,11 @@ code {
 
 .socialbannerlarge {
 	height: 33px;
-	width: 800px;
+	width: 300px;
 	padding-top: 17px;
 	float: left;
 	text-align: center;
+	font-size: 9px;
 }
 
 .socialbannertiny {
