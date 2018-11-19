@@ -5,7 +5,7 @@ from django.core.urlresolvers import reverse
 from django.views import generic
 from django.views.generic import DetailView
 from django.views.generic import ListView
-from .models import Material, AWS, Azure, Google, ContactUs, Lists, Updates
+from .models import Material, AWS, Azure, Google, ContactUs, Lists, Updates, UpdateText
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.db.models import F
