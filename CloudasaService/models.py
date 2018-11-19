@@ -64,16 +64,6 @@ class Lists(models.Model):
 	def __str__(self):
         	return self.title
 
-class Updates(models.Model):
-	title = ListCharField(
-		base_field = models.CharField(max_length=30),
-		size = 5,
-		max_length = (5 * 31)
-	)
-	title_date = models.DateTimeField('updated')
-	def __str__(self):
-       	        return self.title
-
 class UpdateText(models.Model):
         update_text = models.TextField(null=True, max_length=150)
 	title_date = models.DateTimeField('updated')
