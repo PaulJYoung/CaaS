@@ -44,7 +44,7 @@ def index(request):
         'Publicdis': Publicdis,
         'Privatedis': Privatedis,
 	'Publicorprivate': Publicorprivate,
-#       'Author': Author,
+	'UpdateText': UpdateText,
     }
     return render(request, 'CloudasaService/index.html', context)
 
