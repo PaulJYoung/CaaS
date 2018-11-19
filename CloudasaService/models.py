@@ -73,3 +73,9 @@ class Updates(models.Model):
 	title_date = models.DateTimeField('updated')
 	def __str__(self):
        	        return self.title
+
+class UpdateText(models.Model):
+        update_text = models.TextField(null=True, max_length=150)
+	title_date = models.DateTimeField('updated')
+	def __str__(self):
+       	        return self.title
