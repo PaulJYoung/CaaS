@@ -29,6 +29,7 @@ def index(request):
     Publicdis = Material.objects.get(title='publicdis')
     Privatedis = Material.objects.get(title='privatedis')
     Publicorprivate = Material.objects.get(title='publicorprivate')
+    UpdateText = UpdateText.objects.order_by('-post_date')[:1]
 #   Author = Material.objects.get(title='author')
     Module = "index"
     context = {
