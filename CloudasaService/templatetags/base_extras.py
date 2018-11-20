@@ -3,10 +3,10 @@ from ..models import UpdateText
 
 register = template.Library()
 
-@register.simple_tag
+@register.inclusion_tag('CloudasaService/base.html')
 def update_string_header():
     Updatetext = UpdateText.objects.order_by('-post_date')[:1]
-    context = {
- 	      'Updatetext': Updatetext,
-    }
-    return context
+#    context = {
+# 	      'Updatetext': Updatetext,
+#    }
+    return {'Updatetext': Updatetext}
