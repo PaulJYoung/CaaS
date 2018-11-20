@@ -4,7 +4,7 @@ from django .models import UpdateText
 register = template.Library()
 
 @register.simple_tag
-def update_string_header()
+def update_string_header(update_value)
 
     Updatetext = UpdateText.objects.order_by('-post_date')[:1]
     context = {
