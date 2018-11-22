@@ -57,14 +57,14 @@ $(document).ready( function() {
 <!--       <div class="socialbannersmall"><a href="http://www.linkedin.com/in/paul-young-2338302" target="_blank" class="veryTopBtn"><img src="{% static 'TwitterSmall.png' %}"/></a></div> -->
        <div class="floatleft socialbannermedium"><a href="/CaaS/author/" class="veryTopBtn">The Author</a></div>
        <div class="floatleft socialbannermedium"><a href="/CaaS/contact/" class="veryTopBtn">Contact</a></div>
-<!--       {% if update_text %} -->
-<!--           {% for item in update_text %}
-               <div class="floatleft socialbannerlarge">Updated: {{ Updatetext.update_text }}</div>
-               <div class="floatleft socialbannerlarge">Updated: 14.11.2018 Specifics:Self-Service (2)</div>
+       {% if update_text %}
+           {% for item in update_text %}
+               <div class="floatleft socialbannerlarge">Updated: {{ item.update_text }}</div>
+<!--               <div class="floatleft socialbannerlarge">Updated: 14.11.2018 Specifics:Self-Service (2)</div> -->
            {% endfor %}
        {% else %}
            <div class="floatleft socialbannerlarge">Empty</div>
-       {% endif %} -->
+       {% endif %}
    </div>
   </div>
   <div class="inner">
