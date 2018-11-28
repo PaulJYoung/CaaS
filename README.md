@@ -1,6 +1,6 @@
 # Cloud as a Service Website
 
-The purpose of this site is to inform those who are interested on what Cloud actually is. The site is a built using Django web framework, and has been deployed to a popular Cloud service provider using native Docker containers. The containers run a MySQL service, Gunicorn web server, and Nginx reverse proxy.
+The purpose of this site is to inform those who are interested on what Cloud actually is. The site is built using Django web framework, and has been deployed to a popular Cloud service provider using native Docker containers. The containers run a MySQL service, Gunicorn web server, and Nginx reverse proxy.
 
 ## Deployment
 
