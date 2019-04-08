@@ -148,11 +148,10 @@ AWS_DEFAULT_ACL = 'public-read'
 #AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_CUSTOM_DOMAIN = 'd6idje9xyotdi.cloudfront.net'
 REGION_HOST = 's3.eu-west-2.amazonaws.com'
-if not DEBUG:
-
+#if not DEBUG:
 #   AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']
-    AWS_STORAGE_BUCKET_NAME = 'caas-static-prod'
-    STATIC_URL = "https://d6idje9xyotdi.cloudfront.net/"
+AWS_STORAGE_BUCKET_NAME = 'caas-static-prod'
+STATIC_URL = "https://d6idje9xyotdi.cloudfront.net/"
 #   STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
-    STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
