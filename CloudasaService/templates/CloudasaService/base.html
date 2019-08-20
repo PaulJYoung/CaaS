@@ -54,64 +54,54 @@ $(document).ready( function() {
 <!--  <div class="floatleft"><script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/paul-young-2338302" data-format="hover" data-width="200" data-related="false" ></script></div> -->
 <!--  <div class="fb-like floatright" data-href="http://www.cloudasaservice.co.uk/" data-layout="standard" data-action="like" data-size="small" data-width="300" data-show-faces="true" data-share="true"></div>
  </div> -->
- <div class="section sTop">
-  <div class="socialm">
-   <div class="floatleft">
-<!--   <a href = "https://www.facebook.com/philal101"><img src="{% static "if_facebook_circle_color_107175.png" }"/></a>
-    <a href = "https://twitter.com/phil_livesey"><img src="{% static "if_twitter_circle_color_107170.png" }"/></a> -->
-<!--    <a href="https://www.linkedin.com/in/paul-young-2338302/"><img src="{% static 'if_linkedin_circle_color_107178.png' %}"/></a> -->
-<!--    <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/paul.young-2338302" data-format="hover" data-width="200" data-related="false"></script> -->
-<!-- <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/paul-young-2338302" data-format="hover" data-related="false"></script> -->
-       <div class="socialbannersmall"><a href="http://www.linkedin.com/in/paul-young-2338302" target="_blank" class="veryTopBtn"><img src="{% static 'LI_icon.svg' %}"/></a></div>
+    <div class="section sTop">
+        <div class="socialm">
+            <div class="floatleft">
+                <div class="socialbannersmall"><a href="http://www.linkedin.com/in/paul-young-2338302" target="_blank" class="veryTopBtn"><img src="{% static 'LI_icon.svg' %}"/></a></div>
 <!--       <div class="socialbannersmall"><a href="http://www.linkedin.com/in/paul-young-2338302" target="_blank" class="veryTopBtn"><img src="{% static 'TwitterSmall.png' %}"/></a></div> -->
-       <div class="floatleft socialbannermedium"><a href="/CaaS/author/" class="veryTopBtn">The Author</a></div>
-       <div class="floatleft socialbannermedium"><a href="/CaaS/contact/" class="veryTopBtn">Contact</a></div>
-       <div class="floatleft socialbannerlarge">Updated: 04.02.2019: Cloud Adoption / AWS (Overview text update)</div>
-       {% for item in update_text %}
-           <div class="floatleft socialbannerlarge">Updated: {{ item.update_text }}</div>
-<!--               <div class="floatleft socialbannerlarge">Updated: 14.11.2018 Specifics:Self-Service (2)</div> -->
-       {% endfor %}
-   </div>
-  </div>
-  <div class="inner">
-   <div class="svgwrapper">
-<!--     <svg width="961" height="323"> -->
-<!--     <svg viewbox="0 0 961 323"> -->
-     <svg viewbox="0 0 430 240">
-      <g stroke-width="2" stroke="#25aae1">
-<!--      <path d="M280,270 L610,270 C690,270 690,170 610,170 C610,50 400,50 400,170" fill="none" /> -->
-        <path d="M10,230 L340,230 C420,230 420,130 340,130 C340,10 130,10 130,130" fill="none"/>
-      </g>
-      <g>
-        <text fill="lightgrey" x="278" y="230" style="font-family: 'Open Sans', sans-serif; font-size:43px;">Cloud-as-a-Service</text>
-        <text fill="lightgrey" x="282" y="255" style="stroke: lightgrey; font-family: 'Open Sans', sans-serif; font-size:16px; letter-spacing: 9.5px;">Deciphering The Cloud</text>
-      </g>
-     </svg>
+                <div class="floatleft socialbannermedium"><a href="/CaaS/author/" class="veryTopBtn">The Author</a></div>
+                <div class="floatleft socialbannermedium"><a href="/CaaS/contact/" class="veryTopBtn">Contact</a></div>
+                <div class="floatleft socialbannerlarge">Updated: 04.02.2019: Cloud Adoption / AWS (Overview text update)</div>
+                {% for item in update_text %}
+                    <div class="floatleft socialbannerlarge">Updated: {{ item.update_text }}</div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="inner">
+            <div class="svgwrapper">
+                <svg viewbox="0 0 430 240">
+                    <g stroke-width="2" stroke="#25aae1">
+                        <path d="M10,230 L340,230 C420,230 420,130 340,130 C340,10 130,10 130,130" fill="none"/>
+                    </g>
+                    <g>
+                        <text fill="lightgrey" x="278" y="230" style="font-family: 'Open Sans', sans-serif; font-size:43px;">Cloud-as-a-Service</text>
+                        <text fill="lightgrey" x="282" y="255" style="stroke: lightgrey; font-family: 'Open Sans', sans-serif; font-size:16px; letter-spacing: 9.5px;">Deciphering The Cloud</text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="topsection">
+            <div class="topinner">
+                <div class="topsubMenu">
+                {% if Module == 'index' %}
+                    <a href="/CaaS/" class="topNavBtnLeft topactive">Cloud Overview</a>
+                {% else %}
+                    <a href="/CaaS/" class="topNavBtn">Cloud Overview</a>
+                {% endif %}
+                {% if Module == 'virtual' %}
+                    <a href="/CaaS/virtual/" class="topNavBtn topactive">Cloud Specifics</a>
+                {% else %}
+                    <a href="/CaaS/virtual/" class="topNavBtn">Cloud Specifics</a>
+                {% endif %}
+                {% if Module == 'detail' %}
+                    <a href="/CaaS/detail/" class="topNavBtnRight topactive">Cloud Adoption</a>
+                {% else %}
+                    <a href="/CaaS/detail/" class="topNavBtn">Cloud Adoption</a>
+                {% endif %}
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="topsection">
-   <div class="topinner">
-    <div class="topsubMenu">
-     {% if Module == 'index' %}
-     <a href="/CaaS/" class="topNavBtnLeft topactive">Cloud Overview</a>
-     {% else %}
-     <a href="/CaaS/" class="topNavBtn">Cloud Overview</a>
-     {% endif %}
-     {% if Module == 'virtual' %}
-     <a href="/CaaS/virtual/" class="topNavBtn topactive">Cloud Specifics</a>
-     {% else %}
-     <a href="/CaaS/virtual/" class="topNavBtn">Cloud Specifics</a>
-     {% endif %}
-      {% if Module == 'detail' %}
-     <a href="/CaaS/detail/" class="topNavBtnRight topactive">Cloud Adoption</a>
-     {% else %}
-     <a href="/CaaS/detail/" class="topNavBtn">Cloud Adoption</a>
-     {% endif %}
-    </div>
-   </div>
-  </div>
- </div>
+</div>
 
 
 <script type="text/javascript">
