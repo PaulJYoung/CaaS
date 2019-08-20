@@ -769,7 +769,7 @@ h2.subtitle {
 
 }
 
-@media screen and(min-width: 330px) and (max-width: 480px) { 
+@media screen and(min-width: 320px) and (max-width: 480px) { 
 
 .wrap {		
 		max-width: 320px;
