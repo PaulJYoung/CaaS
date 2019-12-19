@@ -563,8 +563,6 @@ code {
     .wrap {
 		/*background:url(../images/bg.png) top left repeat-x;*/
 		width: 100%;
-/*		max-width: 1600px;
-		min-width: 960px; */
 		z-index: 10;
 		position: relative;
 		margin: 0 auto;
@@ -574,8 +572,6 @@ code {
 
     .section {
 	    width: 100%;
-/*	    max-width: 2000px;
-	    min-width: 960px; */
 	    z-index: 10;
 	    position: relative;
 	    margin: 0 auto;
@@ -614,7 +610,8 @@ code {
     .topsubMenu {
 	    min-height: 39px;
 	    z-index: 1000;
-	    width: 440px;
+/*	    width: 440px; */
+        width: 70%;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
 	    background: #034e7f;
