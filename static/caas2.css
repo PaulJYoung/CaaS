@@ -191,7 +191,7 @@ code {
 	width: 960px;
 	margin: 0 auto;
 	position: relative;
-	min-height: 30px;
+	min-height: 30px;   
 	padding: 0px 0;
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
@@ -592,5 +592,33 @@ code {
 	    font-family: 'Open Sans', sans-serif;
 	    font-weight: 300;
     }
+
+    .topinner {
+	    width: 100%;
+	    margin: 0 auto;
+	    position: relative;
+	    min-height: 30px;
+	    padding: 0px 0;
+	    font-size: 18px;
+	    font-family: 'Open Sans', sans-serif;
+	    font-weight: bold;
+        color: #ff7f00;
+    }
+
+    .topsection {
+	    width: 100%;
+	    margin: 0 auto;
+	    padding-top: 5px;
+    }
+
+    .topsubMenu {
+	    min-height: 39px;
+	    z-index: 1000;
+	    width: 440px;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+	    background: #034e7f;
+}
+
 }
 
