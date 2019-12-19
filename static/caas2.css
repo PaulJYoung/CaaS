@@ -594,11 +594,7 @@ code {
 	    margin: 0 auto;
 	    position: relative;
 	    min-height: 30px;
-	    padding: 0px 0;
 	    font-size: 18px;
-	    font-family: 'Open Sans', sans-serif;
-	    font-weight: bold;
-        color: #ff7f00;
     }
 
     .topsection {
