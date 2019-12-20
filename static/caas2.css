@@ -561,13 +561,11 @@ code {
 
 @media only screen and (max-width: 768px) {
     .wrap {
-		/*background:url(../images/bg.png) top left repeat-x;*/
 		width: 100%;
 		z-index: 10;
 		position: relative;
 		margin: 0 auto;
 		padding: 0;
-
     }
 
     .section {
