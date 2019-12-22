@@ -664,6 +664,28 @@ code {
 	    padding-top: 5px;
     }
 
+    .socialbannersmall {
+	    width: 10%;
+	    float: left;
+	    text-align: center;
+    }
+
+    .socialbannermedium {
+	    width: 20%;
+	    margin-top: 17px;
+	    float: left;
+	    text-align: center;
+    }
+
+    .socialbannerlarge {
+/*	    height: 50%; */
+	    width: 50%;
+	    padding-top: 19px;
+	    float: left;
+	    text-align: center;
+	    font-size: 9px;
+    }
+
     .inner {
 	    width: 100%;
 	    margin: 0 auto;
@@ -689,7 +711,7 @@ code {
 
     .topsubMenu {
 	    min-height: 39px;
-	    width: 50%;
+	    width: 100%;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
 	    background: #034e7f;
