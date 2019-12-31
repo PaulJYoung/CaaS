@@ -46,17 +46,25 @@ INSTALLED_APPS = [
     'CloudasaService',
     'storages',
     'django_mysql',
+    'cookielaw',
 ]
 
 MIDDLEWARE_CLASSES = [
-#    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
+#    'django.middleware.security.SecurityMiddleware', (always commentd)
+#    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-#    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+#    'django.contrib.auth.middleware.AuthenticationMiddleware',
+#    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+#    'django.contrib.messages.middleware.MessageMiddleware',
+#    'django.middleware.clickjacking.XFrameOptionsMiddleware', (always commented)
+]
+
+MIDDLEWARE = [
+        'django.contrib.sessions.middleware.SessionMiddleware',
+        'django.contrib.auth.middleware.AuthenticationMiddleware',
+        'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+        'django.contrib.messages.middleware.MessageMiddleware',
 ]
 
 ROOT_URLCONF = 'CaaS.urls'
@@ -87,8 +95,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'CaaS',
-	'USER': '',
-	'PASSWORD': '',
+	    'USER': '',
+	    'PASSWORD': '',
         'HOST': 'db',
         'PORT': '3306'
     }
