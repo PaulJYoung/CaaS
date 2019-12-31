@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'CloudasaService',
     'storages',
     'django_mysql',
-    'cookielaw',
+#   'cookielaw',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -63,7 +63,7 @@ MIDDLEWARE_CLASSES = [
 MIDDLEWARE = [
         'django.contrib.sessions.middleware.SessionMiddleware',
         'django.contrib.auth.middleware.AuthenticationMiddleware',
-#        'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+#k        'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
         'django.contrib.messages.middleware.MessageMiddleware',
 ]
 
