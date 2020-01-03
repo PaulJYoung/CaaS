@@ -1,4 +1,0 @@
-Django==1.9.7
-Gunicorn==19.6.0
-django-storages
-boto
