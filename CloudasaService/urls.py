@@ -1,10 +1,12 @@
 from django.conf.urls import url, include
 from django.contrib.auth import views as auth_views
+#from django.contrib.sitemaps.views import sitemap
 
 from . import views
 
 app_name = 'CloudasaService'
 urlpatterns = [
+#   url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     url(r'^$', views.index, name='index'),
     url(r'^detail/$', views.detail, name='detail'),
     url(r'^virtual/$', views.virtual, name='virtual'),

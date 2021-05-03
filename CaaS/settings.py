@@ -26,6 +26,8 @@ SECRET_KEY = '5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+SITE_ID = 1
+
 #DOMAIN_NAME = ''
 ALLOWED_HOSTS = ['*']
 #SESSION_COOKIE_SECURE = True
@@ -46,6 +48,7 @@ INSTALLED_APPS = [
     'CloudasaService',
     'storages',
     'django_mysql',
+    'django.contrib.sitemaps',
 #   'cookielaw',
 ]
 

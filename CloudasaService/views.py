@@ -35,17 +35,17 @@ def index(request):
     Module = "index"
     context = {
         'Module': Module,
-	'Intro': Intro,
+	    'Intro': Intro,
         'Description': Description,
-	'DescriptionPostlist': DescriptionPostlist,
-	'DescriptionList': DescriptionList,
+	    'DescriptionPostlist': DescriptionPostlist,
+	    'DescriptionList': DescriptionList,
         'Advantage': Advantage,
-	'AdvantageList': AdvantageList,
-	'AdvantagePostlist': AdvantagePostlist,
+	    'AdvantageList': AdvantageList,
+	    'AdvantagePostlist': AdvantagePostlist,
         'Publicdis': Publicdis,
         'Privatedis': Privatedis,
-	'Publicorprivate': Publicorprivate,
-	'Updatetext': Updatetext,
+	    'Publicorprivate': Publicorprivate,
+	    'Updatetext': Updatetext,
     }
     return render(request, 'CloudasaService/index.html', context)
 
