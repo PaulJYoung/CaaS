@@ -55,8 +55,8 @@ $(document).ready( function() {
             <div class="floatleft">
                 <div class="socialbannersmall"><a href="http://www.linkedin.com/in/paul-young-2338302" target="_blank" class="veryTopBtn"><img src="{% static 'LI_icon.svg' %}"/></a></div>
 <!--            <div class="floatleft socialbannermedium"><a href="/CaaS/author/" class="veryTopBtn">The Author</a></div> -->
-                <div class="floatleft socialbannermedium"><a href="/author/" class="veryTopBtn">The Author</a></div>
-                <div class="floatleft socialbannermedium"><a href="/contact/" class="veryTopBtn">Contact</a></div>
+                <div class="floatleft socialbannermedium"><a href="/the-auther-paul-young/" class="veryTopBtn">The Author</a></div>
+                <div class="floatleft socialbannermedium"><a href="/contact-cloud-as-a-service/" class="veryTopBtn">Contact</a></div>
                 <div class="floatleft socialbannerlarge">Updated: 04.02.2019: Cloud Adoption / AWS (Overview text update)</div>
                 {% for item in update_text %}
                     <div class="floatleft socialbannerlarge">Updated: {{ item.update_text }}</div>
@@ -84,20 +84,15 @@ $(document).ready( function() {
                 {% else %}
                     <a href="/" class="topNavBtn">Cloud Overview</a>
                 {% endif %}
-<!--                {% if Module == 'virtual' %}
-                    <a href="/virtual/" class="topNavBtn topactive">Cloud Specifics</a>
-                {% else %}
-                    <a href="/virtual/" class="topNavBtn">Cloud Specifics</a>
-                {% endif %} -->
                 {% if Module == 'virtual' %}
                     <a href="/cloud-as-a-service-cloud-specifics/" class="topNavBtn topactive">Cloud Specifics</a>
                 {% else %}
                     <a href="/cloud-as-a-service-cloud-specifics/" class="topNavBtn">Cloud Specifics</a>
                 {% endif %}
                 {% if Module == 'detail' %}
-                    <a href="/detail/" class="topNavBtnRight topactive">Cloud Adoption</a>
+                    <a href="/cloud-as-a-service-providers/" class="topNavBtnRight topactive">Cloud Adoption</a>
                 {% else %}
-                    <a href="/detail/" class="topNavBtn">Cloud Adoption</a>
+                    <a href="/cloud-as-a-service-providers/" class="topNavBtn">Cloud Adoption</a>
                 {% endif %}
                 </div>
             </div>
