@@ -1,6 +1,6 @@
 from django.conf.urls import url, include
 from django.contrib.auth import views as auth_views
-#from django.contrib.sitemaps.views import sitemap
+from django.contrib.sitemaps.views import sitemap
 
 from . import views
 
@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^description/$', views.description, name='description'),
     url(r'^difference/$', views.difference, name='difference'),
     url(r'^the-author-paul-young/$', views.author, name='author'),
+    url(r'^CaaS/author/$', views.author, name='author'),
     url(r'^contact-cloud-as-a-service/$', views.contactview, name='contactview'),
     url(r'^businesscontinuity/$', views.businesscontinuity, name='businesscontinuity'),
 #    url(r'^(?P<postid>[0-9]+)/$', views.postview, name='postview'),
