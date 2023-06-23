@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
-from django_mysql.models import ListCharField
+#from django_mysql.models import ListCharField
 #
 #
 class Material(models.Model):
